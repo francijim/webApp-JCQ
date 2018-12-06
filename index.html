@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>WebApp-JCQ</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div id="btn-maquina"></div>
+    <div class="rojo"></div>
+    <div class="azul"></div>
+    <div class="amarillo"></div>
+
+    <div class="intro">
+
+        <h1>Bienvenidos!</h1>
+        <h2>Torre Empresarial Las Reynas</h2>
+
+        <p>
+            De antemanos un cordial saludo y total agradecimiento por la oportunidad que nos brindan, para poder
+            mostrarles nuestros productos y servicios.
+            <br><br>
+            El contenido de esta presentacion es totalmente interactivo para su comodidad, haga click en la diferentes
+            areas del ascensor para obtener detalles . Las siguiente leyenda indica el
+            estado en que se encuentran los componentes de su ascensor al momento de la inspeccion.
+            <br><br>
+            Rojo: estado critico, se recomienda reemplazar a corto plazo. <br><br>
+            Amarillo: estado aceptable reemplazar a mediado plazo. <br><br>
+            Azul: Estado normal. <br><br>
+
+        </p>
+
+    </div>
+
+
+    <div class="footer">
+        <p>&copy JCQ, Ingenieria en Ascensores,Srl-Todos los derechos reservados 2019</p>
+    </div>
+
+
+    <!--ventana modal-->
+
+    <div id="container" class="container">
+
+        <div class="content-maquina">
+            <span class="cerrar">&times;</span>
+            <h2>Motor y maquina de traccion</h2>
+            <hr>
+            <img src="img/001.png" alt=""> 
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque vero eum minus. Quidem illo
+                impedit, cumque laboriosam molestias, corporis placeat vel iste quisquam in iure aliquam nemo illum
+                quae.
+            </p>
+            
+            <a href="#">Saber mas</a>
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+
+        /*contenido de motor y maquina de traccion*/
+    var container = document.getElementById('container');
+    var btn = document.getElementById("btn-maquina");
+    var cerrar = document.getElementsByClassName("cerrar")[0];
+
+    btn.onclick = function () {
+        container.style.display = "block";
+    }
+    cerrar.onclick = function () {
+        container.style.display = "none";
+    }
+
+
+    </script>
+
+   
+
+</body>
+
+</html>

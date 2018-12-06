@@ -1,0 +1,159 @@
+body {
+    background-image: url('../img/005.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 350px;
+    background-position: center;
+}
+
+.container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+}
+
+.content-maquina {
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #ddd;
+    z-index: 9999;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    
+}
+
+.content-maquina h2 {
+    position: relative;
+    top: 15px;
+    background-color: #00A0F0;
+    font-size: 1.3em;
+    display: inline;
+    color: white;
+    padding: 5px 0px;
+
+}
+
+.content-maquina hr {
+    width: 95%;
+    margin-top: 5px;
+    position: relative;
+    top: 30px;
+    left: 0px;
+    color: #aaa;
+}
+
+.content-maquina p {
+    position: relative;
+    float: left;
+    top: 40px;
+    left: 10px;
+    width: 65%;
+    text-align: justify;
+}
+
+.content-maquina a{
+    position: relative;
+    float: right;
+    top: 42%;
+    right: 20px;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.content-maquina a:hover{
+    background-color: #00A0F0;
+    color: white;
+
+}
+
+.content-maquina img{
+    float: left;
+    width: 150px;
+    position: relative;
+    top: 50px;
+}
+
+.cerrar {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.intro {
+    width: 500px;
+    position: relative;
+    left: 10px;
+    top: 90px;
+    z-index: -1;
+
+}
+
+.intro p {
+    text-align: justify;
+    width: 90%;
+    color: #333;
+}
+
+.intro h1,
+h2 {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}        
+
+#btn:hover {
+    cursor: pointer;
+}
+
+#btn-maquina {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 100px;
+    left: 500px;
+    border-radius: 50%;
+    background-color: #00A0F0;
+    animation: blinker 1s linear infinite;
+}
+
+.rojo{
+    position: relative;
+    top: 350px;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+@keyframes blinker {
+0% {
+    opacity: 0;
+}
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #aaa;
+}
